@@ -105,9 +105,9 @@ def check_time():
             for user in list(users):
 
                 setNotification(user)
-            time.sleep(10)
+            time.sleep(60)
         else:
-            time.sleep(10)
+            time.sleep(30)
 @bot.message_handler(commands=['image'])
 def sendImg(m):
     prompt = m.text.partition(' ')[2].strip() #чисты запрос после пробела
